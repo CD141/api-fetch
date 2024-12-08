@@ -13,9 +13,9 @@
     const renderPokemon = async url => {
         const img = document.createElement('img')
         // url of the image from the 'front_default' property
-        img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + url + '.png'
+        img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + Math.floor(Math.random() * 1025) + '.png'
         // name of the pokemon
-        img.alt = 'https://pokeapi.co/api/v2/pokemon-species/' + url + '/'
+        img.alt = 'https://pokeapi.co/api/v2/pokemon-species/' + Math.floor(Math.random() * 1025) + '/'
         div.append(img)
     }
     renderPokemon()
